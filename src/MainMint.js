@@ -40,7 +40,7 @@ const MainMint = ({ accounts, setAccount }) => {
 
   return (
     <div>
-      <h1>oboPunks</h1>
+      <h1>RoboPunks</h1>
       <p>It's 2046. Can the RoboPunks NFT save humans from destructive </p>
       {isConnected ? (
         <div>
