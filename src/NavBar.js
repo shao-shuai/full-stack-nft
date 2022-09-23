@@ -17,8 +17,18 @@ const NavBar = ({ accounts, setAccounts }) => {
   }
 
   return (
-    <div>
-      <div>Facebook</div>
+    <Flex justify="space-between" align="center" padding="30px">
+      <Flex justify="space-around" width="40%" padding="0 75px">
+        <Link href="https:www.facebook.com">
+          <Image src={Facebook} boxSize="42px" margin="0 15px"/>
+        </Link>
+        <Link href="https:www.facebook.com">
+          <Image src={Twitter} boxSize="42px" margin="0 15px"/>
+        </Link>
+        <Link href="https:www.facebook.com">
+          <Image src={Email} boxSize="42px" margin="0 15px"/>
+        </Link>
+      </Flex>
       <div>Twitter</div>
       <div>Email</div>
       <div>Abount</div>
@@ -29,7 +39,7 @@ const NavBar = ({ accounts, setAccounts }) => {
       ) : (
         <button onClick={connectAccount}>Connect</button>
       )}
-    </div>
+    </Flex>
   );
 };
 
